@@ -94,7 +94,7 @@ body .main{
     overflow-y: scroll;
     box-shadow: inset 0px 5px 6px -6px black;
 }
-.side-inputarea{
+.side-bottomarea{
     flex:0.35;
     width: auto;
     height: auto;
@@ -151,7 +151,7 @@ button{
 .users{
     padding:10px;
     font-family:'Montserrat', sans-serif;
-    border-bottom: 1px solid grey;
+    
     list-style-type:none;
 }
 .dot{    
@@ -217,9 +217,9 @@ button{
         background-color:whitesmoke;
     }
     .inputarea{
-        flex:0.35;
+        flex:0.2;
         display:flex;
-        padding: 10px;
+        padding: 2px;
         border-top: 1px solid rgba(171, 183, 183, 1);
     }
     .inputarea form{
@@ -234,9 +234,12 @@ button{
         border-radius: 5px;
         font-size: 16px;
         background-color: white;
-        padding:10px;
-        margin: 4px 2px;    
+        padding:8px;
+        margin: 2px 2px;    
       }
+    .inputarea button{
+        height:35px;
+    }  
     .side-chattitle{
         flex:0.25;
         padding:10px;
@@ -252,11 +255,14 @@ button{
         background-color:whitesmoke;
         overflow-y: scroll;
     }
-    .side-inputarea{
-        flex:0.35;
+    .side-bottomarea{
+        flex:0.2;
+        
+        display:flex;
         width: auto;
         height: auto;
-        padding: 10px;
+        padding: 2px;
+        justify-content: center;
         text-align: center;
         border-top: 1px solid rgba(171, 183, 183, 1);
         
@@ -274,10 +280,17 @@ button{
       text-decoration: none;
       display: inline-block;
       font-size: 10px;
-      margin: 4px 2px;  
+      margin: 2px 2px;  
       cursor: pointer;
       border-radius:5px;
       outline: none;
     
     }
+    .users{
+        padding:2px;
+        font-family:'Montserrat', sans-serif;
+        
+        list-style-type:none;
+    }
   }
+
