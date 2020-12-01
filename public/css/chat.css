@@ -1,4 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
 *{
-   margin:0;
-   padding:0;
+    margin: 0;
+    padding: 0;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+body .main{
+    display: flex;
+    width:1000px;
+    height:auto;
+    margin: 10px;
+    padding:2px;
+    border:2px solid rgb(33, 192, 86);
+    border-radius: 10px;
+    height: auto;
+    background-color:rgba(232, 236, 241, 1);
+    box-shadow: 0px 0px 5px 1px #4caf50;
+
+}
+.sidebar{
+    flex:1;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    
+}
+.chatmain{
+    flex:3;
+    display:flex;
+    flex-direction: column;
+    height:90vh;
+}
+.chattitle{
+    flex:0.25;
+    padding:10px;
+    background-color:rgba(232, 236, 241, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    text-align:left;
+    
+}
+.msgarea{
+    flex:3;
+    padding: 24px 24px 0;
+    overflow-y: scroll;
+    background-color:whitesmoke;
+    box-shadow: inset 4px 5px 6px -6px black;
+}
+.inputarea{
+    flex:0.35;
+    display:flex;
+    padding: 10px;
+    box-shadow: -2px -5px 4px -6px black;
+    
+}
+.inputarea form{
+    display: flex;
+    flex-grow: 1;
+}
+.inputarea input{
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    padding:10px;
+    margin: 4px 2px;    
+  }
+.side-chattitle{
+    flex:0.25;
+    padding:10px;
+    background-color:rgba(232, 236, 241, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    text-align:center;
+    box-shadow: inset -13px -5px 4px -14px black;
+    
+}
+.side-userarea{
+    flex:3;
+    padding:10px;
+    background-color:whitesmoke;
+    overflow-y: scroll;
+    box-shadow: inset 0px 5px 6px -6px black;
+}
+.side-inputarea{
+    flex:0.35;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: -8px -13px 4px -14px black;
+    
+}
+.title_head{
+    padding: 10px;
+    color: green;
+}
+button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;  
+  cursor: pointer;
+  border-radius:5px;
+  outline: none;
+
+}
+
+.message{
+    border: 2px solid #dedede;
+    background-color: #4CAF50;
+    border:none;
+    color:white;
+    border-radius: 10px 10px 10px 0px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+  }
+.message__meta{
+    float: right;
+    color: white;
+    font-weight: 300;
+}  
+.message__name{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.msg-text{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:100;
+    padding-left: 5px;
+}
+.users{
+    padding:10px;
+    font-family:'Montserrat', sans-serif;
+    border-bottom: 1px solid grey;
+    list-style-type:none;
+}
+.dot{    
+    height: 5px;
+    width: 5px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 400px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+    body .main{
+        display: flex;
+        width:auto;
+        height:auto;
+        margin: 10px;
+        padding:2px;
+        border:1px solid rgb(33, 192, 86);
+        border-radius: 10px;
+        height: auto;
+        background-color:rgba(232, 236, 241, 1);
+    
+    }
+    .sidebar{
+        flex:1;
+        height:90vh;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .chatmain{
+        flex:3;
+        display:flex;
+        flex-direction: column;
+        height:90vh;
+        
+        border-left: 1px solid rgba(171, 183, 183, 1);
+          
+    }
+    .chattitle{
+        flex:0.25;
+        padding:10px;
+        background-color:rgba(232, 236, 241, 1);
+        font-family: 'Roboto', sans-serif;
+        font-weight:400;
+        text-align:left;
+        border-bottom: 1px solid rgba(171, 183, 183, 1);
+    }
+    .msgarea{
+        flex:3;
+        padding: 24px 24px 0;
+        overflow-y: scroll;
+        background-color:whitesmoke;
+    }
+    .inputarea{
+        flex:0.35;
+        display:flex;
+        padding: 10px;
+        border-top: 1px solid rgba(171, 183, 183, 1);
+    }
+    .inputarea form{
+        display: flex;
+        flex-grow: 1;
+    }
+    .inputarea input{
+        width: 100%;
+        outline: none;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: white;
+        padding:10px;
+        margin: 4px 2px;    
+      }
+    .side-chattitle{
+        flex:0.25;
+        padding:10px;
+        background-color:rgba(232, 236, 241, 1);
+        font-family: 'Roboto', sans-serif;
+        font-weight:400;
+        text-align:center;
+        border-bottom: 1px solid rgba(171, 183, 183, 1);
+    }
+    .side-userarea{
+        flex:3;
+        padding:10px;
+        background-color:whitesmoke;
+        overflow-y: scroll;
+    }
+    .side-inputarea{
+        flex:0.35;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid rgba(171, 183, 183, 1);
+        
+    }
+    .title_head{
+        padding: 10px;
+        color: green;
+    }
+    button{
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;  
+      cursor: pointer;
+      border-radius:5px;
+      outline: none;
+    
+    }
+  }
