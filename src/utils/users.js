@@ -19,11 +19,11 @@ const addUser = ({id, username, room})=>{
             error:'Username is in use!'
         }
     }
-
+    
     const user = {id, username, room}
     users.push(user)
     return {user}
-}    
+}
 
 const removeUser =(id)=>{
     const index = users.findIndex((user) => user.id === id)
@@ -46,5 +46,5 @@ module.exports = {
     addUser,
     removeUser,
     getUser,
-    getUsersInRoom
+    getUsersInRoom       
 }

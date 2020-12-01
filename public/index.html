@@ -14,8 +14,15 @@
             <form action="/chat.html">
                 <label>Display name</label>
                 <input type="text" name="username" placeholder="Display name" required autocomplete="off">
-                <label>Room</label>
-                <input type="text" name="room" placeholder="Room" required autocomplete="off">
+                <label>Join / Create Room</label>
+                <input type="text" name="room" placeholder="Room" list="roomnames" required autocomplete="off">
+                <datalist id="roomnames">
+                    <option value="JavaScript">
+                    <option value="Node.Js">
+                    <option value="MongoDb">
+                    <option value="HTML">    
+                    <option Value="General Discussion">        
+                </datalist>
                 <button>Join</button>
             </form>
 
